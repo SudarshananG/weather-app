@@ -1,13 +1,13 @@
 import React from 'react';
 import '../css/style.css';
-import { Card, Button } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 import moment from 'moment';
 
 const refresh = () =>{
     window.location.reload();
 }
 
-const ExampleCard = ({ weatherData })=>(
+const CurrentWeatherCard = ({ weatherData })=>(
     
     <div className="main">
         <div className="main-container">
@@ -33,4 +33,4 @@ const ExampleCard = ({ weatherData })=>(
     </div>
 );
 
-export default ExampleCard;
+export default CurrentWeatherCard;

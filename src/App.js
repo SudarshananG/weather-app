@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import Weather from './Components/currentForcast';
-import DailyForcast from './Components/dailyForcast';
-import { Dimmer, Loader } from 'semantic-ui-react';
+import Weather from './Components/currentForecast';
+import DailyForecast from './Components/dailyForecast';
+// import { Dimmer, Loader } from 'semantic-ui-react';
 
 require('dotenv').config()
 
@@ -11,7 +11,6 @@ function App() {
   const[lat, setLat] = useState([]);
   const[long, setLong] = useState([]);
   const[data, setData] = useState([]);
-  const[dailyData, setDailyData] = useState([]);
 
   useEffect(() => {
     var tempObj = {};
@@ -31,7 +30,7 @@ function App() {
       .then(res => res.json())
       .then(result => {
         tempObj.name = result.name;
-        console.log(tempObj);
+        // console.log(tempObj);
       });
       setData(tempObj)
     }
@@ -40,9 +39,18 @@ function App() {
 
   return (
     <div className="App">
-      <div className="curr-forcast">
+      {/* Current Forecast */}
+      <div className="curr-forecast">
         {(typeof data.name != 'undefined') ? (
           <Weather weatherData= {data} />
+        ):(
+          <div></div>
+        )}
+      </div>
+      {/* Daily Forecast */}
+      <div className="daily-forecast">
+        {(typeof data.name != 'undefined') ? (
+          <DailyForecast weatherData= {data} />
         ):(
           <div></div>
         )}
