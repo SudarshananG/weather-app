@@ -15,6 +15,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 
+p{
+    margin: 0 !important;
+}
+
 .main{
     width: 500px;
     border-radius: 20px;
@@ -70,6 +74,7 @@
 }
 
 .description{
+    display: flex;
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
@@ -78,6 +83,11 @@
 }
 
 .button{
+    width: 35px;
+    height: 35px;
+}
+
+.weather-icon{
     width: 35px;
     height: 35px;
 }
