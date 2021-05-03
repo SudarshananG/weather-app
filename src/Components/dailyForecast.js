@@ -11,13 +11,6 @@ const refresh = () =>{
     window.location.reload();
 }
 
-// const Moment = require('moment');
-// const MomentRange = require('moment-range');
-// const moment2 = MomentRange.extendMoment(Moment);
-
-
-// console.log(arrayOfDates)
-
 function daysGenerator(){
     const start = moment();
     const end = moment().add(7, 'days');
