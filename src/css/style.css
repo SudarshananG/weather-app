@@ -21,9 +21,14 @@ p{
 
 .main{
     width: 500px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #01579b;
     margin: 20px auto;
+}
+
+.main-container{
+    overflow: auto;
+    border-radius: 10px;
 }
 
 .top{
@@ -31,8 +36,8 @@ p{
     background-color: #424242;
     color: whitesmoke;
     padding: 10px;
-    border-radius: 20px 20px 0 0;
-    font-family: 'Recursive', sans-serif;
+    border-radius: 10px 10px 0 0;
+    /* font-family: 'Recursive', sans-serif; */
     display: flex;
     justify-content: space-between;
 }
@@ -42,22 +47,45 @@ p{
     color: whitesmoke;
     margin: 10px 0px 0px 10px;
     font-size: 25px;
-    border-radius: 20px 20px 0 0;
-    font-family: 'Recursive', sans-serif;
+    border-radius: 10px 10px 0 0;
+    /* font-family: 'Recursive', sans-serif; */
 }
 
 .day{
     padding: 15px;
     color: whitesmoke;
-    font-family: 'Recursive', sans-serif;
-    font-size: 24px;
+    /* font-family: 'Recursive', sans-serif; */
+    font-size: 22px;
     font-weight: 600;
+}
+
+.dayList{
+    /* display: flex; */
+    padding: 15px;
+    color: whitesmoke;
+    /* font-family: 'Recursive', sans-serif; */
+    font-size: 18px;
+    font-weight: 600;
+    list-style: none;
+    /* text-align: left; */
+    /* justify-content: space-around; */
+    border-right: 1px solid #063357;
+}
+
+.daynight-block {
+    text-align: left;
+}
+
+.daily-report-content{
+    display: block ruby;
+    overflow: auto;
+    scrollbar-width: thin;
 }
 
 .temp{
     padding: 15px;
     color: whitesmoke;
-    font-family: 'Recursive', sans-serif;
+    /* font-family: 'Recursive', sans-serif; */
     font-size: 18px;
 }
 
@@ -69,7 +97,7 @@ p{
 .sunrise-sunset{
     padding: 15px;
     color: whitesmoke;
-    font-family: 'Recursive', sans-serif;
+    /* font-family: 'Recursive', sans-serif; */
     font-size: 16px;
 }
 
@@ -77,7 +105,7 @@ p{
     display: flex;
     padding: 15px;
     color: whitesmoke;
-    font-family: 'Recursive', sans-serif;
+    /* font-family: 'Recursive', sans-serif; */
     font-size: 24px;
     font-weight: 600;
 }
@@ -90,4 +118,8 @@ p{
 .weather-icon{
     width: 35px;
     height: 35px;
+}
+
+.daynight-block{
+    font-size: 14px;
 }
