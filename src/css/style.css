@@ -65,15 +65,17 @@ p{
     color: whitesmoke;
     /* font-family: 'Recursive', sans-serif; */
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     list-style: none;
     /* text-align: left; */
     /* justify-content: space-around; */
     border-right: 1px solid #063357;
+    cursor: pointer;
 }
 
 .daynight-block {
     text-align: left;
+    font-style: italic;
 }
 
 .daily-report-content{
@@ -122,4 +124,10 @@ p{
 
 .daynight-block{
     font-size: 14px;
+}
+
+button{
+    background: none;
+    border: 0;
+    padding: 0;
 }
