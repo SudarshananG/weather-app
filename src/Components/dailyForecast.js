@@ -29,7 +29,6 @@ function ModalExampleBasic(weatherData) {
       >
         <Modal.Header>Select a Photo</Modal.Header>
         <Modal.Content image>
-            <Image size='medium' src='https://react.semantic-ui.com/images/avatar/large/rachel.png' wrapped />
             <Modal.Description>
             <Header>Default Profile Image</Header>
             <p>
